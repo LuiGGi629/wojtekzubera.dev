@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Wojtek Zubera'
 SITENAME = 'Wojtek Zubera'
-SITEURL = ''
+SITEURL = 'https://affectionate-nobel-2a09ac.netlify.com'
 
 PATH = 'content'
 
