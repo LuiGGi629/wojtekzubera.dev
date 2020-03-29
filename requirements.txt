@@ -13,7 +13,7 @@ entrypoints==0.3
 feedgenerator==1.9.1
 ghp-import==0.5.5
 idna==2.9
-ipykernel==5.2.0
+ipykernel==4.10.0
 ipython==7.13.0
 ipython-genutils==0.2.0
 jedi==0.16.0
