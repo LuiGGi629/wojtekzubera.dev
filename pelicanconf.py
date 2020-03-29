@@ -2,19 +2,26 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'Wojtek Zubera'
-SITENAME = 'Wojtek Zubera'
-SITEURL = 'https://affectionate-nobel-2a09ac.netlify.com'
-
-PATH = 'content'
-
-TIMEZONE = 'Europe/Warsaw'
-
-DEFAULT_LANG = 'en'
+RELATIVE_URLS = False
+PATH = "content"
+AUTHOR = "Wojtek Zubera"
+SITENAME = "Wojtek Zubera"
+SITETITLE = SITENAME
+SITESUBTITLE = "I write about the things I learn."
+SITEURL = "https://affectionate-nobel-2a09ac.netlify.com"
+TIMEZONE = "Europe/Warsaw"
+DEFAULT_LANG = "en"
 
 THEME = "./themes/Flex"
+STATIC_PATHS = ["extra"]
+EXTRA_PATH_METADATA = {
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/wz-deepart.jpg': {'path': 'wz-deepart.jpg'},
+}
+SITELOGO = "/wz-deepart.jpg"
+FAVICON = "/favicon.ico"
 
-# PLUGIN_PATHS = ['./plugins/pelican-plugins']
+# PLUGIN_PATHS = ["./plugins/pelican-plugins"]
 
 # PLUGINS = [
 #     "sitemap",
@@ -29,8 +36,8 @@ THEME = "./themes/Flex"
 #     "liquid_tags.include_code",
 #     "representative_image",
 #     "share_post",
-#     'show_source',
-#     'tipue_search',
+#     "show_source",
+#     "tipue_search",
 #     "dateish",
 #     "post_stats",
 #     "render_math",
@@ -47,16 +54,16 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (("Pelican", "http://getpelican.com/"),
+         ("Python.org", "http://python.org/"),
+         ("Jinja2", "http://jinja.pocoo.org/"),
+         ("You can modify those links in your config file", "#"),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (("You can add links in your config file", "#"),
+          ("Another social link", "#"),)
 
 DEFAULT_PAGINATION = 5
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# RELATIVE_URLS = True
