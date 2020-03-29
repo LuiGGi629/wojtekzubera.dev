@@ -12,6 +12,33 @@ TIMEZONE = 'Europe/Warsaw'
 
 DEFAULT_LANG = 'en'
 
+THEME = "./themes/Flex"
+
+# PLUGIN_PATHS = ['./plugins/pelican-plugins']
+
+# PLUGINS = [
+#     "sitemap",
+#     "better_codeblock_line_numbering",
+#     # "better_code_samples",
+#     "bootstrapify",
+#     "deadlinks",
+#     "more_categories",
+#     "neighbors",
+#     "pelican-ert",
+#     "liquid_tags.notebook",
+#     "liquid_tags.include_code",
+#     "representative_image",
+#     "share_post",
+#     'show_source',
+#     'tipue_search',
+#     "dateish",
+#     "post_stats",
+#     "render_math",
+#     "related_posts",
+#     "autostatic",
+#     "clean_summary"
+# ]
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
