@@ -29,6 +29,12 @@ MENUITEMS = (
     ("Search", "/search.html"),
 )
 
+SITEMAP = {
+    "format": "xml",
+    "priorities": {"articles": 0.8, "indexes": 0.6, "pages": 0.7},
+    "changefreqs": {"articles": "weekly", "indexes": "daily", "pages": "monthly"},
+}
+
 NOTEBOOK_DIR = ''
 CODE_DIR = ''
 
