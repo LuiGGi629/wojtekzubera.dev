@@ -71,10 +71,14 @@ LINKS = (("Pelican", "http://getpelican.com/"),
 
 # Social widget
 GITHUB = "LuiGGi629"
+# , GITHUB, "fab fa-github"
 LINKEDIN = "wojtek-zubera-18895415b"
+# , LINKEDIN, "fab fa-linkedin-in"
 
-SOCIAL = (("Github", "https://github.com/" + GITHUB, GITHUB, "fab fa-github"),
-          ("LinkedIn", "https://www.linkedin.com/in/" + LINKEDIN, LINKEDIN, "fab fa-linkedin-in"),)
+SOCIAL = (
+    ("Github", "https://github.com/" + GITHUB),
+    ("LinkedIn", "https://www.linkedin.com/in/" + LINKEDIN),
+)
 
 # PAGINATION
 DEFAULT_PAGINATION = 5
