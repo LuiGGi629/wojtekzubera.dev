@@ -70,14 +70,14 @@ LINKS = (("Pelican", "http://getpelican.com/"),
          ("You can modify those links in your config file", "#"),)
 
 # Social widget
-GITHUB = "LuiGGi629"
-# , GITHUB, "fab fa-github"
-LINKEDIN = "wojtek-zubera-18895415b"
+# GITHUB = "LuiGGi629"
+# # , GITHUB, "fab fa-github"
+# LINKEDIN = "wojtek-zubera-18895415b"
 # , LINKEDIN, "fab fa-linkedin-in"
 
 SOCIAL = (
-    ("Github", "https://github.com/" + GITHUB),
-    ("LinkedIn", "https://www.linkedin.com/in/" + LINKEDIN),
+    ("Github", "https://github.com/LuiGGi629"),
+    ("LinkedIn", "https://www.linkedin.com/in/wojtek-zubera-18895415b"),
 )
 
 # PAGINATION
