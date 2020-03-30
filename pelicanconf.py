@@ -7,17 +7,21 @@ from __future__ import unicode_literals
 # GENERAL
 PATH = "content"
 AUTHOR = "Wojtek Zubera"
-SITENAME = "Wojtek Zubera"
+SITENAME = "Wojtek Zubera log"
 SITETITLE = SITENAME
 SITESUBTITLE = "I write about the things I learn."
 SITEURL = "https://affectionate-nobel-2a09ac.netlify.com"
-RELATIVE_URLS = False
 TIMEZONE = "Europe/Warsaw"
 DEFAULT_LANG = "en"
 STATIC_PATHS = ["extra"]
 SITELOGO = "/wz-deepart.jpg"
 FAVICON = "/favicon.ico"
 # DELETE_OUTPUT_DIRECTORY = True
+
+# can be useful in development, but set to False when you're ready to publish
+RELATIVE_URLS = True
+
+GITHUB_URL = 'http://github.com/luiggi629/'
 
 # TIME AND DATES
 DEFAULT_DATE_FORMAT = '%d %B %Y'
@@ -76,14 +80,16 @@ AUTHOR_FEED_RSS = None
 LINKS = (("You can modify those links in your config file", "#"),)
 
 # Social widget
-# GITHUB = "LuiGGi629"
-# LINKEDIN = "wojtek-zubera-18895415b"
+GITHUB = "luiggi629"
+LINKEDIN = "wojtek-zubera-18895415b"
 
 SOCIAL = (
-    ("Github (#LuiGGi629)", "https://github.com/LuiGGi629"),)
+    ("github", "https://github.com/" + GITHUB),
+    ("linkedIn", "https://www.linkedin.com/in/" + LINKEDIN),
+)
 
 # PAGINATION
-DEFAULT_PAGINATION = 5
+DEFAULT_PAGINATION = 4
 
 # DISABLE CACHING
 LOAD_CONTENT_CACHE = False
