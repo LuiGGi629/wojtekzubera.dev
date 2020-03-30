@@ -13,9 +13,22 @@ SITESUBTITLE = "I write about the things I learn."
 SITEURL = "https://affectionate-nobel-2a09ac.netlify.com"
 TIMEZONE = "Europe/Warsaw"
 DEFAULT_LANG = "en"
-STATIC_PATHS = ["extra"]
+STATIC_PATHS = ["extra", "blog"]
 SITELOGO = "/wz-deepart.jpg"
 FAVICON = "/favicon.ico"
+
+USE_FOLDER_AS_CATEGORY = False
+MAIN_MENU = True
+HOME_HIDE_TAGS = False
+
+MENUITEMS = (
+    ("Archives", "/archives.html"),
+    ("Categories", "/categories.html"),
+    ("Tags", "/tags.html"),
+)
+
+NOTEBOOK_DIR = ''
+CODE_DIR = ''
 
 # DELETE_OUTPUT_DIRECTORY = True
 DISPLAY_PAGES_ON_MENU = True
@@ -41,15 +54,15 @@ EXTRA_PATH_METADATA = {
 }
 
 # ARCHIVES
-YEAR_ARCHIVE_SAVE_AS = '{date:%Y}/index.html'
-ARCHIVES_SAVE_AS = 'articles/index.html'
-ARCHIVES_URL = 'articles'
+# YEAR_ARCHIVE_SAVE_AS = '{date:%Y}/index.html'
+# ARCHIVES_SAVE_AS = 'articles/index.html'
+# ARCHIVES_URL = 'articles'
 
 # AUTHORS
-AUTHORS_SAVE_AS = 'authors/index.html'
-AUTHOR_URL = 'author/{slug}'
+# AUTHORS_SAVE_AS = 'authors/index.html'
+# AUTHOR_URL = 'author/{slug}'
 
-# PLUGIN_PATHS = ["./plugins/pelican-plugins"]
+PLUGIN_PATHS = ["./plugins/pelican-plugins"]
 
 # PLUGINS = [
 #     "sitemap",
