@@ -11,12 +11,12 @@ SITENAME = "Wojtek Zubera"
 SITETITLE = SITENAME
 SITESUBTITLE = "I write about the things I learn."
 SITEURL = "https://affectionate-nobel-2a09ac.netlify.com"
+RELATIVE_URLS = False
 TIMEZONE = "Europe/Warsaw"
 DEFAULT_LANG = "en"
 STATIC_PATHS = ["extra"]
 SITELOGO = "/wz-deepart.jpg"
 FAVICON = "/favicon.ico"
-RELATIVE_URLS = False
 # DELETE_OUTPUT_DIRECTORY = True
 
 # TIME AND DATES
@@ -76,13 +76,11 @@ AUTHOR_FEED_RSS = None
 LINKS = (("You can modify those links in your config file", "#"),)
 
 # Social widget
-GITHUB = "LuiGGi629"
-LINKEDIN = "wojtek-zubera-18895415b"
+# GITHUB = "LuiGGi629"
+# LINKEDIN = "wojtek-zubera-18895415b"
 
 SOCIAL = (
-    ("Github", "https://github.com/" + GITHUB),
-    ("LinkedIn", "https://www.linkedin.com/in/" + LINKEDIN),
-)
+    ("Github (#LuiGGi629)", "https://github.com/LuiGGi629"),)
 
 # PAGINATION
 DEFAULT_PAGINATION = 5
