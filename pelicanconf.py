@@ -7,7 +7,7 @@ from __future__ import unicode_literals
 # GENERAL
 PATH = "content"
 AUTHOR = "Wojtek Zubera"
-SITENAME = "Wojtek Zubera log"
+SITENAME = "wojtek_zubera.log"
 SITETITLE = SITENAME
 SITESUBTITLE = "I write about the things I learn."
 SITEURL = "https://affectionate-nobel-2a09ac.netlify.com"
@@ -16,7 +16,14 @@ DEFAULT_LANG = "en"
 STATIC_PATHS = ["extra"]
 SITELOGO = "/wz-deepart.jpg"
 FAVICON = "/favicon.ico"
+
 # DELETE_OUTPUT_DIRECTORY = True
+DISPLAY_PAGES_ON_MENU = True
+RELATED_POSTS_SKIP_SAME_CATEGORY = True
+
+# IGNORE_FILES = ['*.html', '*.rst']
+
+USE_TIPUE_SEARCH = True
 
 # can be useful in development, but set to False when you're ready to publish
 RELATIVE_URLS = True
@@ -83,13 +90,21 @@ LINKEDIN = "wojtek-zubera-18895415b"
 
 SOCIAL = (
     ("github", "https://github.com/" + GITHUB),
-    ("linkedIn", "https://www.linkedin.com/in/" + LINKEDIN),
+    ("linkedin", "https://www.linkedin.com/in/" + LINKEDIN),
 )
 
 GITHUB_URL = "http://github.com/" + GITHUB
 
+GITHUB_CORNER_URL = "https://github.com/" + GITHUB + "/wojtekzubera.dev"
+
 # PAGINATION
 DEFAULT_PAGINATION = 4
+DEFAULT_ORPHANS = 0
+PAGINATION_PATTERNS = (
+    (1, '{name}{extension}', '{name}{extension}'),
+    (2, 'latest-{number}/', 'latest-{number}/index.html'),
+)
+PAGINATED_TEMPLATES = {'period_archives': None}
 
 # DISABLE CACHING
 LOAD_CONTENT_CACHE = False
