@@ -76,11 +76,8 @@ PLUGINS = [
     "sitemap",
     "better_codeblock_line_numbering",
     # "better_code_samples",
-    "bootstrapify",
-    "deadlinks",
     "more_categories",
     "neighbors",
-    "pelican-ert",
     "liquid_tags.notebook",
     "liquid_tags.include_code",
     "representative_image",
@@ -91,7 +88,6 @@ PLUGINS = [
     "post_stats",
     "render_math",
     "related_posts",
-    "autostatic",
     "clean_summary"
 ]
 
