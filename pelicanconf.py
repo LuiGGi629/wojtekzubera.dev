@@ -31,6 +31,15 @@ EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
 }
 
+# ARCHIVES
+YEAR_ARCHIVE_SAVE_AS = '{date:%Y}/index.html'
+ARCHIVES_SAVE_AS = 'articles/index.html'
+ARCHIVES_URL = 'articles'
+
+# AUTHORS
+AUTHORS_SAVE_AS = 'authors/index.html'
+AUTHOR_URL = 'author/{slug}'
+
 # PLUGIN_PATHS = ["./plugins/pelican-plugins"]
 
 # PLUGINS = [
@@ -64,24 +73,22 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (("Pelican", "http://getpelican.com/"),
-         ("Python.org", "http://python.org/"),
-         ("Jinja2", "http://jinja.pocoo.org/"),
-         ("You can modify those links in your config file", "#"),)
+LINKS = (("You can modify those links in your config file", "#"),)
 
 # Social widget
-# GITHUB = "LuiGGi629"
-# # , GITHUB, "fab fa-github"
-# LINKEDIN = "wojtek-zubera-18895415b"
-# , LINKEDIN, "fab fa-linkedin-in"
+GITHUB = "LuiGGi629"
+LINKEDIN = "wojtek-zubera-18895415b"
 
 SOCIAL = (
-    ("Github", "https://github.com/LuiGGi629"),
-    ("LinkedIn", "https://www.linkedin.com/in/wojtek-zubera-18895415b"),
+    ("Github", "https://github.com/" + GITHUB, GITHUB, "fab fa-github"),
+    ("LinkedIn", "https://www.linkedin.com/in/" + LINKEDIN, LINKEDIN, "fab fa-linkedin"),
 )
 
 # PAGINATION
 DEFAULT_PAGINATION = 5
+
+# DISABLE CACHING
+LOAD_CONTENT_CACHE = False
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
