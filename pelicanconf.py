@@ -84,8 +84,8 @@ GITHUB = "luiggi629"
 LINKEDIN = "wojtek-zubera-18895415b"
 
 SOCIAL = (
-    ("github", "https://github.com/" + GITHUB),
-    ("linkedIn", "https://www.linkedin.com/in/" + LINKEDIN),
+    ("github", "https://github.com/" + GITHUB, "fab fa-github"),
+    ("linkedIn", "https://www.linkedin.com/in/" + LINKEDIN, "fab fa-linkedin"),
 )
 
 # PAGINATION
