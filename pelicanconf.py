@@ -21,8 +21,6 @@ FAVICON = "/favicon.ico"
 # can be useful in development, but set to False when you're ready to publish
 RELATIVE_URLS = True
 
-GITHUB_URL = 'http://github.com/luiggi629/'
-
 # TIME AND DATES
 DEFAULT_DATE_FORMAT = '%d %B %Y'
 
@@ -84,9 +82,11 @@ GITHUB = "luiggi629"
 LINKEDIN = "wojtek-zubera-18895415b"
 
 SOCIAL = (
-    ("github", "https://github.com/" + GITHUB, "fab fa-github"),
-    ("linkedIn", "https://www.linkedin.com/in/" + LINKEDIN, "fab fa-linkedin"),
+    ("github", "https://github.com/" + GITHUB),
+    ("linkedIn", "https://www.linkedin.com/in/" + LINKEDIN),
 )
+
+GITHUB_URL = "http://github.com/" + GITHUB
 
 # PAGINATION
 DEFAULT_PAGINATION = 4
