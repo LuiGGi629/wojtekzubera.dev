@@ -113,11 +113,11 @@ GITHUB_CORNER_URL = "https://github.com/" + GITHUB + "/wojtekzubera.dev"
 # PAGINATION
 DEFAULT_PAGINATION = 4
 DEFAULT_ORPHANS = 0
-PAGINATION_PATTERNS = (
-    (1, '{name}{extension}', '{name}{extension}'),
-    (2, 'latest-{number}/', 'latest-{number}/index.html'),
-)
-PAGINATED_TEMPLATES = {'period_archives': None}
+# PAGINATION_PATTERNS = (
+#     (1, '{name}{extension}', '{name}{extension}'),
+#     (2, 'latest-{number}/', 'latest-{number}/index.html'),
+# )
+# PAGINATED_TEMPLATES = {'period_archives': None}
 
 # DISABLE CACHING
 LOAD_CONTENT_CACHE = False
