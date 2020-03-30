@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+# https://github.com/getpelican/pelican/blob/master/docs/settings.rst
 
-RELATIVE_URLS = False
+
+# GENERAL
 PATH = "content"
 AUTHOR = "Wojtek Zubera"
 SITENAME = "Wojtek Zubera"
@@ -11,15 +13,23 @@ SITESUBTITLE = "I write about the things I learn."
 SITEURL = "https://affectionate-nobel-2a09ac.netlify.com"
 TIMEZONE = "Europe/Warsaw"
 DEFAULT_LANG = "en"
-
-THEME = "./themes/Flex"
 STATIC_PATHS = ["extra"]
+SITELOGO = "/wz-deepart.jpg"
+FAVICON = "/favicon.ico"
+RELATIVE_URLS = False
+# DELETE_OUTPUT_DIRECTORY = True
+
+# TIME AND DATES
+DEFAULT_DATE_FORMAT = '%d %B %Y'
+
+# THEME VARIABLES
+THEME = "./themes/Flex"
+
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
     'extra/wz-deepart.jpg': {'path': 'wz-deepart.jpg'},
+    'extra/robots.txt': {'path': 'robots.txt'},
 }
-SITELOGO = "/wz-deepart.jpg"
-FAVICON = "/favicon.ico"
 
 # PLUGIN_PATHS = ["./plugins/pelican-plugins"]
 
@@ -60,9 +70,13 @@ LINKS = (("Pelican", "http://getpelican.com/"),
          ("You can modify those links in your config file", "#"),)
 
 # Social widget
-SOCIAL = (("You can add links in your config file", "#"),
-          ("Another social link", "#"),)
+GITHUB = "LuiGGi629"
+LINKEDIN = "wojtek-zubera-18895415b"
 
+SOCIAL = (("Github", "https://github.com/" + GITHUB, GITHUB, "fab fa-github"),
+          ("LinkedIn", "https://www.linkedin.com/in/" + LINKEDIN, LINKEDIN, "fab fa-linkedin-in"),)
+
+# PAGINATION
 DEFAULT_PAGINATION = 5
 
 # Uncomment following line if you want document-relative URLs when developing
