@@ -4,11 +4,15 @@ from __future__ import unicode_literals
 
 # https://github.com/getpelican/pelican/blob/master/docs/settings.rst
 
+# ERROR: Could not process blog/word-counter/word-counter.md
+# 10:31:16 AM:   | TypeError: write() argument 1 must be unicode, not str
+# 10:31:16 AM: misc
+# 10:31:16 AM:  ** Writing styles to _nb_header.html: this should be included in the theme. **
 
 # GENERAL
 PATH = "content"
 AUTHOR = "Wojtek Zubera"
-SITENAME = "__wojtek__\n__zubera__"
+SITENAME = "Wojtek\nZubera"
 SITETITLE = SITENAME
 SITESUBTITLE = "I write about the things I learn."
 SITEURL = "https://affectionate-nobel-2a09ac.netlify.com"

@@ -1,4 +1,4 @@
-Title: Counting Words with Python
+Title: Recursively counting words with Python
 Date: 31 March 2020
 Author: Wojtek Zubera
 Category: Python
