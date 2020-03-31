@@ -40,8 +40,8 @@ SITEMAP = {
     "changefreqs": {"articles": "weekly", "indexes": "daily", "pages": "monthly"},
 }
 
-# NOTEBOOK_DIR = ''
-# CODE_DIR = ''
+NOTEBOOK_DIR = ''
+CODE_DIR = ''
 
 # DELETE_OUTPUT_DIRECTORY = True
 DISPLAY_PAGES_ON_MENU = True
