@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+
 # https://github.com/getpelican/pelican/blob/master/docs/settings.rst
 
 
 # GENERAL
 PATH = "content"
 AUTHOR = "Wojtek Zubera"
-SITENAME = "wojtek_zubera.log"
+SITENAME = "__wojtek__\n__zubera__"
 SITETITLE = SITENAME
 SITESUBTITLE = "I write about the things I learn."
 SITEURL = "https://affectionate-nobel-2a09ac.netlify.com"
@@ -70,6 +71,7 @@ EXTRA_PATH_METADATA = {
 # AUTHORS_SAVE_AS = 'authors/index.html'
 # AUTHOR_URL = 'author/{slug}'
 
+# PLUGINS
 PLUGIN_PATHS = ["./plugins/pelican-plugins"]
 
 PLUGINS = [
@@ -91,15 +93,23 @@ PLUGINS = [
     "clean_summary"
 ]
 
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
+CLEAN_SUMMARY_MAXIMUM = 1
 
-# Blogroll
-LINKS = (("You can modify those links in your config file", "#"),)
+# MARKDOWN
+# MARKUP = ('md', 'ipynb')
+MARKUP = ('md',)
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {'css_class': 'highlight', 'linenums': 'True'},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+        'markdown.extensions.toc': {},
+    },
+    'output_format': 'html5',
+}
+# IPYNB_USE_METACELL = True
+
+# IGNORE_FILES = [".ipynb_checkpoints"]
 
 # Social widget
 GITHUB = "luiggi629"
@@ -125,6 +135,16 @@ DEFAULT_ORPHANS = 0
 
 # DISABLE CACHING
 LOAD_CONTENT_CACHE = False
+
+# Feed generation is usually not desired when developing
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
+
+# Blogroll
+LINKS = (("You can modify those links in your config file", "#"),)
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
