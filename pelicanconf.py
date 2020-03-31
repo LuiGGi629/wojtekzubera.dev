@@ -12,7 +12,7 @@ from __future__ import unicode_literals
 # GENERAL
 PATH = "content"
 AUTHOR = "Wojtek Zubera"
-SITENAME = "Wojtek\nZubera"
+SITENAME = "__Wojtek__\n__Zubera__"
 SITETITLE = SITENAME
 SITESUBTITLE = "I write about the things I learn."
 SITEURL = "https://affectionate-nobel-2a09ac.netlify.com"
@@ -98,6 +98,8 @@ PLUGINS = [
 ]
 
 CLEAN_SUMMARY_MAXIMUM = 1
+
+EXTRA_HEADER = open('_nb_header.html').read()
 
 # MARKDOWN
 # MARKUP = ('md', 'ipynb')

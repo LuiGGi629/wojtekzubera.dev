@@ -5,41 +5,41 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://affectionate-nobel-2a09ac.netlify.com/</loc>
-<lastmod>2020-03-31T10:27:23-00:00</lastmod>
+<lastmod>2020-03-31T11:28:41-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://affectionate-nobel-2a09ac.netlify.com/tags.html</loc>
-<lastmod>2020-03-31T10:27:23-00:00</lastmod>
+<lastmod>2020-03-31T11:28:41-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://affectionate-nobel-2a09ac.netlify.com/categories.html</loc>
-<lastmod>2020-03-31T10:27:23-00:00</lastmod>
+<lastmod>2020-03-31T11:28:41-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://affectionate-nobel-2a09ac.netlify.com/authors.html</loc>
-<lastmod>2020-03-31T10:27:23-00:00</lastmod>
+<lastmod>2020-03-31T11:28:41-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>https://affectionate-nobel-2a09ac.netlify.com/archives.html</loc>
-<lastmod>2020-03-31T10:27:23-00:00</lastmod>
+<lastmod>2020-03-31T11:28:41-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>https://affectionate-nobel-2a09ac.netlify.com/counting-words-with-python.html</loc>
+<loc>https://affectionate-nobel-2a09ac.netlify.com/recursively-counting-words-with-python.html</loc>
 <lastmod>2020-03-31T00:00:00+02:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.8</priority>
