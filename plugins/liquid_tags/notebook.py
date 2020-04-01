@@ -47,6 +47,8 @@ this will insert the appropriate CSS.  All efforts have been made to ensure
 that this CSS will not override formats within the blog theme, but there may
 still be some conflicts.
 """
+from __future__ import unicode_literals
+
 import warnings
 import re
 import os
@@ -341,7 +343,7 @@ def notebook(preprocessor, tag, markup):
                            for css_line in resources['inlining']['css'])
         header += JS_INCLUDE
 
-        with open('_nb_header.html', 'w', encoding='utf-8') as f:
+        with open('_nb_header.html', 'w') as f:
             f.write(header)
         notebook.header_saved = True
 
