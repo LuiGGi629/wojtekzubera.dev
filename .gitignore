@@ -228,3 +228,7 @@ dmypy.json
 *.xlsx
 *.xls
 *.json
+
+output
+_build
+_nb_header.html
