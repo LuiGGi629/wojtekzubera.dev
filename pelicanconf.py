@@ -5,10 +5,6 @@ import os
 
 # https://github.com/getpelican/pelican/blob/master/docs/settings.rst
 
-# ERROR: Could not process blog/word-counter/word-counter.md
-# 10:31:16 AM:   | TypeError: write() argument 1 must be unicode, not str
-# 10:31:16 AM: misc
-# 10:31:16 AM:  ** Writing styles to _nb_header.html: this should be included in the theme. **
 
 # GENERAL
 
@@ -85,6 +81,8 @@ ARTICLE_SAVE_AS = '{slug}.html'
 # PLUGINS
 PLUGIN_PATHS = ["./plugins/"]
 
+DIRECT_TEMPLATES = ('index', 'authors', 'tags', 'categories', 'archives', 'search')
+
 PLUGINS = [
     "sitemap",
     "better_codeblock_line_numbering",
@@ -113,7 +111,7 @@ if not os.path.exists('_nb_header.html'):
     warnings.warn("_nb_header.html not found. "
                   "Rerun make html to finalize build.")
 else:
-    EXTRA_HEADER = open('_nb_header.html').read()
+    EXTRA_HEADER = open('_nb_header.html').read().decode('utf-8')
 
 # MARKDOWN
 # MARKUP = ('md', 'ipynb')
@@ -164,7 +162,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (("You can modify those links in your config file", "#"),)
+# LINKS = (("You can modify those links in your config file", "#"),)
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
