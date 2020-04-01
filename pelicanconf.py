@@ -60,7 +60,7 @@ RELATIVE_URLS = True
 DEFAULT_DATE_FORMAT = '%d %B %Y'
 
 # THEME VARIABLES
-THEME = "./Flex"
+THEME = "./themes/Flex"
 
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
@@ -83,7 +83,7 @@ ARTICLE_SAVE_AS = '{slug}.html'
 # AUTHOR_URL = 'author/{slug}'
 
 # PLUGINS
-PLUGIN_PATHS = ["./pelican-plugins"]
+PLUGIN_PATHS = ["./plugins/"]
 
 PLUGINS = [
     "sitemap",
