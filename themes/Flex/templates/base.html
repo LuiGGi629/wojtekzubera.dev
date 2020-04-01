@@ -56,6 +56,11 @@
         });
     </script>
     {% endif %} {% if GOOGLE_TAG_MANAGER %} {% include "partial/gtm.html" %} {% endif %}
+
+    {% if EXTRA_HEADER %}
+    {{ EXTRA_HEADER }}
+    {% endif %}
+
 </head>
 
 <body>
