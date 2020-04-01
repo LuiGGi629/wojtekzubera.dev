@@ -7,7 +7,6 @@ import os
 
 
 # GENERAL
-
 PATH = "content"
 AUTHOR = "Wojtek Zubera"
 SITENAME = "__Wojtek__\n__Zubera__"
@@ -29,7 +28,7 @@ MENUITEMS = (
     ("Categories", "/categories.html"),
     ("Tags", "/tags.html"),
     ("Sitemap", "/sitemap.xml"),
-    ("Search", "/search.html"),
+    # ("Search", "/search.html"),
 )
 
 SITEMAP = {
@@ -85,20 +84,24 @@ DIRECT_TEMPLATES = ('index', 'authors', 'tags', 'categories', 'archives', 'searc
 
 PLUGINS = [
     "sitemap",
-    "better_codeblock_line_numbering",
-    # "better_code_samples",
+    # "better_codeblock_line_numbering",
+    "better_code_samples",
+    "bootstrapify",
+    "deadlinks",
     "more_categories",
     "neighbors",
+    "pelican-ert",
     "liquid_tags.notebook",
     "liquid_tags.include_code",
     "representative_image",
     "share_post",
-    "show_source",
-    "tipue_search",
+    'show_source',
+    'tipue_search',
     "dateish",
     "post_stats",
     "render_math",
     "related_posts",
+    "autostatic",
     "clean_summary"
 ]
 
@@ -111,7 +114,7 @@ if not os.path.exists('_nb_header.html'):
     warnings.warn("_nb_header.html not found. "
                   "Rerun make html to finalize build.")
 else:
-    EXTRA_HEADER = open('_nb_header.html').read().decode('utf-8')
+    EXTRA_HEADER = open('_nb_header.html').read()
 
 # MARKDOWN
 # MARKUP = ('md', 'ipynb')
