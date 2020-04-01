@@ -1,6 +1,7 @@
 [submodule "Flex"]
 	path = Flex
 	url = https://github.com/alexandrevicenzi/Flex.git
+	branch = luiggi629/extra_header
 [submodule "pelican-plugins"]
 	path = pelican-plugins
 	url = https://github.com/getpelican/pelican-plugins.git
