@@ -341,7 +341,7 @@ def notebook(preprocessor, tag, markup):
                            for css_line in resources['inlining']['css'])
         header += JS_INCLUDE
 
-        with open('_nb_header.html', 'w') as f:
+        with open('_nb_header.html', 'w', encoding='utf-8') as f:
             f.write(header)
         notebook.header_saved = True
 
