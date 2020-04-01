@@ -45,7 +45,7 @@ SITEMAP = {
 NOTEBOOK_DIR = ''
 CODE_DIR = ''
 
-# DELETE_OUTPUT_DIRECTORY = True
+DELETE_OUTPUT_DIRECTORY = True
 DISPLAY_PAGES_ON_MENU = True
 RELATED_POSTS_SKIP_SAME_CATEGORY = True
 
@@ -67,6 +67,11 @@ EXTRA_PATH_METADATA = {
     'extra/wz-deepart.jpg': {'path': 'wz-deepart.jpg'},
     'extra/robots.txt': {'path': 'robots.txt'},
 }
+
+# ARTICLES
+ARTICLE_URL = '{slug}.html'
+# ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%b}/{date:%d}/{slug}/index.html'
+ARTICLE_SAVE_AS = '{slug}.html'
 
 # ARCHIVES
 # YEAR_ARCHIVE_SAVE_AS = '{date:%Y}/index.html'
